@@ -8,24 +8,205 @@
     <title>Document</title>
 </head>
 <body>
-    <header class="header">
-        <img src="src/main-page/logo.png" class="logo header_logo">
-        <nav class="nav header_nav">
-            <div class="link-wrapper header_link-wrapper">
-                <a href="" class="link header_link">Main</a>
-            </div>
-            <div class="link-wrapper header_link-wrapper">
-                <a href="" class="link header_link">About</a>
-            </div>
-            <div class="link-wrapper header_link-wrapper">
-                <a href="" class="link header_link">Departments</a>
-            </div>
-            <div class="link-wrapper header_link-wrapper">
-                <a href="" class="link header_link">Order</a>
-            </div>
-        </nav>
-    </header>
+<header class="header">
+    <img src="src/main-page/logo.png" class="logo header_logo" alt="logo image">
+    <nav class="nav header_nav">
+        <div class="link-wrapper header_link-wrapper">
+            <a href="" class="link header_link">Main</a>
+        </div>
+        <div class="link-wrapper header_link-wrapper">
+            <a href="" class="link header_link">About</a>
+        </div>
+        <div class="link-wrapper header_link-wrapper">
+            <a href="" class="link header_link">Departments</a>
+        </div>
+        <div class="link-wrapper header_link-wrapper">
+            <a href="" class="link header_link">Order</a>
+        </div>
+    </nav>
+</header>
 
+<main class="main">
+    <section class=" title-wrapper main_title-wrapper">
+        <h1 class="title main_title">Institute for Applied System Analysis courses</h1>
+        <h3 class="subtitle main_subtitle">EIT preparation for students of 10-11 grades with further obtaining
+            additional points for admission</h3>
+        <button class="buy-button main_buy-button">Buy now</button>
+    </section>
+    <img src="src/main-page/title-image.png" alt="title image">
+</main>
 
+<section class="about">
+    <h2 class="info-title about_info-title">About us</h2>
+    <img src="src/about/about-image.png" alt="about image">
+    <article class="info about_info">IASA, accredited at level IV since 1997 by the Ukrainian Cabinet of Ministers,
+        was formed through the merger of the Research Institute for Applied Systems Analysis, the National Academy
+        of Sciences of Ukraine, and the Ministry of Education of Ukraine, along with the Department of Mathematical
+        Methods of System Analysis.
+        IASA comprises three academic departments: Mathematical Methods of Systems Analysis, Applied Nonlinear Analysis,
+        and numerical optimization methods. In 2006, it expanded to include the Department of Computer Aided Design
+        (formerly
+        known as the "Chair of Design and Production of Electronic Computing Equipment" until 1985, and later renamed as
+        the
+        "Systems Engineering Department") in collaboration with the Institute of Information Resources (INFORES).
+    </article>
+</section>
+
+<section class="departments">
+    <h2 class="info-title departments_info-title">Departments</h2>
+    <nav class="faculties-wrapper departments_faculties-wrapper">
+        <a class="faculty departments_faculty">System Analysis</a>
+        <a class="faculty departments_faculty">System Design</a>
+        <a class="faculty departments_faculty">Artificial Intelligence</a>
+    </nav>
+    <div class="tabs-info-container">
+        <div class="info-wrapper departments_info-wrapper">
+            <article class="info departments_info">The department trains specialists in system analysis and intelligent
+                decision-making systems.
+                Graduates design and operate computer systems for analyzing, forecasting, and managing dynamic processes
+                in macroeconomics, technology, environment, and finance.
+                They find employment in various sectors, such as banking, stock markets, ministries, tax agencies, and
+                more, including roles in special
+                services, pension funds, database design, and automated system development.
+            </article>
+            <img src="src/departments/system-analysis.png" alt="system analysis image">
+        </div>
+    </div>
+</section>
+
+<section class="courses">
+    <h2 class="info-title departments_info-title">Our preparatory courses</h2>
+
+    <div class="container courses_container">
+        <div class="course-info courses_course-info">
+            <img src="src/courses/math.png" alt="math course image">
+            <h3 class="course-title courses_course-title">Math Contains</h3>
+            <ul class="contains-list courses_contains-list">
+                <li class="contains-item courses_contains-item">Algebra and number theory</li>
+                <li class="contains-item courses_contains-item">Probability and statistics</li>
+                <li class="contains-item courses_contains-item">Mathematical analysis</li>
+                <li class="contains-item courses_contains-item">Practical applications</li>
+                <li class="contains-item courses_contains-item">Geometry</li>
+            </ul>
+
+            <h3 class="price courses_price">99$ per month</h3>
+            <button class="buy-button courses_buy-button">Buy now</button>
+        </div>
+        <div class="course-info courses_course-info">
+            <img src="src/courses/physics.png" alt="physics course image">
+            <h3 class="course-title courses_course-title">Physics Contains</h3>
+            <ul class="contains-list courses_contains-list">
+                <li class="contains-item courses_contains-item">Atomic and nuclear physics</li>
+                <li class="contains-item courses_contains-item">Electricity and magnetism</li>
+                <li class="contains-item courses_contains-item">Optics and waves</li>
+                <li class="contains-item courses_contains-item">Thermodynamics</li>
+                <li class="contains-item courses_contains-item">Mechanics</li>
+            </ul>
+
+            <h3 class="price courses_price">120$ per month</h3>
+            <button class="buy-button courses_buy-button">Buy now</button>
+        </div>
+        <div class="course-info courses_course-info">
+            <img src="src/courses/english.png" alt="english course image">
+            <h3 class="course-title courses_course-title">English Contains</h3>
+            <ul class="contains-list courses_contains-list">
+                <li class="contains-item courses_contains-item">Effective Writing Techniques</li>
+                <li class="contains-item courses_contains-item">Advanced Grammar</li>
+                <li class="contains-item courses_contains-item">Advanced Reading</li>
+                <li class="contains-item courses_contains-item">Exam Preparation</li>
+                <li class="contains-item courses_contains-item">New syntax</li>
+            </ul>
+
+            <h3 class="price courses_price">79$ per month</h3>
+            <button class="buy-button courses_buy-button">Buy now</button>
+        </div>
+    </div>
+</section>
+
+<section class="buy">
+    <h2 class="info-title buy_info-title">Buy now</h2>
+
+    <div class="inputs-container buy_inputs-container">
+        <div class="input-wrapper buy_input-wrapper">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name">
+        </div>
+        <div class="input-wrapper buy_input-wrapper">
+            <label for="phone">Name:</label>
+            <input type="text" id="phone" placeholder="Enter your phone number">
+        </div>
+        <div class="input-wrapper buy_input-wrapper">
+            <label for="telegram">Name:</label>
+            <input type="text" id="telegram" placeholder="Enter your telegram">
+        </div>
+        <div class="input-wrapper buy_input-wrapper">
+            <label for="grade">Name:</label>
+            <input type="text" id="grade" placeholder="Enter your grade">
+        </div>
+        <div class="input-wrapper buy_input-wrapper">
+            <label for="email">Name:</label>
+            <input type="text" id="email" placeholder="Enter your email">
+        </div>
+    </div>
+
+    <div class="select-container buy_select-container">
+        <div class="select-input-wrapper buy_select-input-wrapper">
+            <input type="checkbox" id="math">
+            <label for="math">Math</label>
+        </div>
+        <div class="select-input-wrapper buy_select-input-wrapper">
+            <input type="checkbox" id="physics">
+            <label for="physics">Physics</label>
+        </div>
+        <div class="select-input-wrapper buy_select-input-wrapper">
+            <input type="checkbox" id="english">
+            <label for="english">English</label>
+        </div>
+    </div>
+
+    <div class="price-container buy_price-container">
+        <h3 class="price-title buy_price-title">Price for all courses: 99$</h3>
+        <button class="order-button buy_order-button">Place an order</button>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="wrapper footer_wrapper">
+    <div class="links-container footer_links-container">
+        <div class="link footer-link">
+            <img src="src/footer/inst.png" alt="instagram logo">
+            <span class="link-title footer-link-title">IASA Instagram</span>
+        </div>
+        <div class="link footer-link">
+            <img src="src/footer/facebook.png" alt="facebook logo">
+            <span class="link-title footer-link-title">IASA Facebook</span>
+        </div>
+    </div>
+    <img src="src/footer/footer-logo.png" alt="footer logo">
+    </div>
+    <div class="wrapper footer_wrapper">
+        <div class="links-container footer_links-container">
+            <div class="link footer-link">
+                <span class="link-title footer-link-title">Privacy policy</span>
+            </div>
+            <div class="link footer-link">
+                <span class="link-title footer-link-title">Terms of Use</span>
+            </div>
+        </div>
+        <p class="link-title footer-link-title">© 2023 IASA STUDENT COUNSIL</p>
+    </div>
+    <div class="wrapper footer_wrapper">
+        <div class="contacts footer_contacts">
+            <div class="contacts-wrapper footer_contacts-wrapper">
+                <h4 class="contacts-title footer_contacts-title">Email:</h4>
+                <h5 class="contacts-info footer_contacts-info">Iasa.student.counsil@lll.kpi.ua</h5>
+            </div>
+            <div class="contacts-wrapper footer_contacts-wrapper">
+                <h4 class="contacts-title footer_contacts-title">Address:</h4>
+                <h5 class="contacts-info footer_contacts-info">building № 35, Beresteiskyi Avenue, 37-A, 03056, Kyiv, Ukraine</h5>
+            </div>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
