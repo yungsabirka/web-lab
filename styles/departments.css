@@ -1,0 +1,143 @@
+/* --------------DEPARTMENTS---------------- */
+.departments{
+    margin: 0 auto;
+    max-width: 100vw;
+    height: 768px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.departments_info-title{
+    color: #000000;
+}
+.departments_info-title{
+    margin: 20px auto;
+}
+.faculties-wrapper{
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.departments_faculties-wrapper{
+    margin: 20px auto;
+}
+.faculty{
+    font-size: 32px;
+    font-weight: 400;
+    transition: 0.2s all ease;
+    width: 300px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 5px 0;
+}
+.faculty:hover{
+    color: #FFD200;
+    cursor: pointer;
+}
+.tabs-info-container {
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.departments_tabs-info-container{
+    margin: 0 auto;
+}
+.departments_info-article{
+}
+.departments_info{
+    max-width: 540px;
+    color: #000000;
+}
+.department-image{
+    width: 550px;
+    height: 570px;
+}
+
+@media (max-width: 1200px){
+    .departments{
+        height: 700px;
+    }
+    .faculty{
+        width: 300px;
+    }
+    .faculties-wrapper{
+        width: 1000px;
+    }
+    .tabs-info-container{
+        width: 1000px;
+    }
+    .department-image{
+        width: 450px;
+        height: 470px;
+    }
+}
+@media (max-width: 1000px){
+    .departments{
+        height: 650px;
+    }
+    .faculty{
+        width: 250px;
+        font-size: 24px;
+    }
+    .faculties-wrapper{
+        width: 800px;
+    }
+    .tabs-info-container{
+        width: 800px;
+    }
+    .department-image{
+        width: 400px;
+        height: 420px;
+    }
+}
+@media (max-width: 800px){
+    .departments{
+        height: 900px;
+    }
+    .faculty{
+        width: 250px;
+        font-size: 24px;
+    }
+    .faculties-wrapper{
+        width: 450px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .tabs-info-container{
+        width: 450px;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .department-image{
+        width: 400px;
+        height: 420px;
+    }
+}
+@media (max-width: 450px){
+    .departments{
+        height: 800px;
+    }
+    .faculty{
+        width: 200px;
+        font-size: 20px;
+    }
+    .faculties-wrapper{
+        width: 320px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .tabs-info-container{
+        width: 320px;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .department-image{
+        width: 300px;
+        height: 320px;
+    }
+}

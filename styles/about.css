@@ -1,0 +1,117 @@
+.about{
+    margin: 0 auto;
+    max-width: 100vw;
+    height: 768px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    background-color: black;
+}
+.info-title{
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 46px;
+}
+.about_info-title{
+    margin: 20px auto;
+}
+.about-info-wrapper{
+    width: 1350px;
+    margin: 0 auto;
+    display: flex;
+    align-items: end;
+    justify-content: space-around;
+}
+.info-article{
+    color: #FFFFFF;
+    max-width: 620px;
+}
+.info{
+    text-align: justify;
+    font-size: 24px;
+    font-weight: 400;
+}
+.image-house{
+    width: 620px;
+    height: 570px;
+    filter: contrast(200%);
+}
+
+@media (max-width: 1350px){
+    .image-house{
+        width: 520px;
+        height: 480px;
+    }
+    .about-info-wrapper{
+        max-width: 1200px;
+    }
+    .info-article{
+        max-width: 520px;
+    }
+}
+@media (max-width: 1200px){
+    .about{
+        height: 600px;
+    }
+    .image-house{
+        width: 420px;
+        height: 380px;
+    }
+    .about-info-wrapper{
+        max-width: 1000px;
+    }
+    .info-article{
+        max-width: 420px;
+    }
+    .info{
+        font-size: 20px;
+    }
+}
+@media (max-width: 1000px){
+    .about{
+        height: 500px;
+    }
+    .image-house{
+        width: 350px;
+        height: 350px;
+    }
+    .about-info-wrapper{
+        max-width: 800px;
+    }
+    .info-article{
+        max-width: 350px;
+    }
+    .info{
+        font-size: 16px;
+    }
+}
+@media (max-width: 800px){
+    .about-info-wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+    .about{
+        height: 800px;
+        align-items: center;
+    }
+    .info-article{
+        max-width: 420px;
+        margin-top: 10px;
+    }
+    .about-info-wrapper{
+        max-width: 450px;
+    }
+}
+@media (max-width: 450px){
+    .info{
+        font-size: 16px;
+    }
+    .about-info-wrapper{
+        max-width: 320px;
+    }
+    .image-house{
+        width: 300px;
+        height: 300px;
+    }
+}

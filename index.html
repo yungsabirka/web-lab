@@ -5,6 +5,13 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/courses.css">
+    <link rel="stylesheet" href="styles/departments.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/footer.css">
     <title>IASA Courses</title>
 </head>
 <body>
@@ -24,35 +31,49 @@
             <a href="" class="link header_link">Order</a>
         </div>
     </nav>
+    <div class="burger-menu">
+        <img class="burger-icon" id="burgerIcon" src="src/burger-icon.png" alt="burger-icon">
+    </div>
 </header>
 
 <main class="main">
     <section class=" title-wrapper main_title-wrapper">
-        <h1 class="title main_title">Institute for Applied System Analysis courses</h1>
-        <h3 class="subtitle main_subtitle">EIT preparation for students of 10-11 grades with further obtaining
-            additional points for admission</h3>
+        <div class="titles">
+            <h1 class="title main_title">Institute for Applied System Analysis courses</h1>
+            <h3 class="subtitle main_subtitle">EIT preparation for students of 10-11 grades with further obtaining
+                additional points for admission</h3>
+        </div>
+
         <button class="buy-button main_buy-button">Buy now</button>
     </section>
-    <img src="src/main-page/title-image.png" alt="title image">
+    <img src="src/main-page/title-image.png" alt="title image" class="iasa-page_image main_image">
 </main>
 
 <section class="about">
     <h2 class="info-title about_info-title">About us</h2>
-    <img src="src/about/about-image.png" alt="about image">
-    <article class="info-article about_info-article">
-        <p class="info about_info">
-        IASA, accredited at level IV since 1997 by the Ukrainian Cabinet of Ministers,
-        was formed through the merger of the Research Institute for Applied Systems Analysis, the National Academy
-        of Sciences of Ukraine, and the Ministry of Education of Ukraine, along with the Department of Mathematical
-        Methods of System Analysis.
-        IASA comprises three academic departments: Mathematical Methods of Systems Analysis, Applied Nonlinear Analysis,
-        and numerical optimization methods. In 2006, it expanded to include the Department of Computer Aided Design
-        (formerly
-        known as the "Chair of Design and Production of Electronic Computing Equipment" until 1985, and later renamed as
-        the
-        "Systems Engineering Department") in collaboration with the Institute of Information Resources (INFORES).
-        </p>
-    </article>
+    <div class="about-info-wrapper">
+        <img class="image-house about_image-house" src="src/about/about-image.png" alt="about image">
+        <article class="info-article about_info-article">
+            <p class="info about_info">
+                IASA, accredited at level IV since 1997 by the Ukrainian Cabinet of Ministers,
+                was formed through the merger of the Research Institute for Applied Systems Analysis, the National
+                Academy
+                of Sciences of Ukraine, and the Ministry of Education of Ukraine, along with the Department of
+                Mathematical
+                Methods of System Analysis.
+                IASA comprises three academic departments: Mathematical Methods of Systems Analysis, Applied Nonlinear
+                Analysis,
+                and numerical optimization methods. In 2006, it expanded to include the Department of Computer Aided
+                Design
+                (formerly
+                known as the "Chair of Design and Production of Electronic Computing Equipment" until 1985, and later
+                renamed as
+                the
+                "Systems Engineering Department") in collaboration with the Institute of Information Resources
+                (INFORES).
+            </p>
+        </article>
+    </div>
 </section>
 
 <section class="departments">
@@ -62,10 +83,9 @@
         <a class="faculty departments_faculty">System Design</a>
         <a class="faculty departments_faculty">Artificial Intelligence</a>
     </nav>
-    <div class="tabs-info-container">
-        <div class="info-wrapper departments_info-wrapper">
-            <article class="info-article departments_info-article">
-                <p class="info about_info">
+    <div class="tabs-info-container departments_tabs-info-container">
+        <article class="info-article departments_info-article">
+            <p class="info departments_info">
                 The department trains specialists in system analysis and intelligent
                 decision-making systems.
                 Graduates design and operate computer systems for analyzing, forecasting, and managing dynamic processes
@@ -73,19 +93,19 @@
                 They find employment in various sectors, such as banking, stock markets, ministries, tax agencies, and
                 more, including roles in special
                 services, pension funds, database design, and automated system development.
-                </p>
-            </article>
-            <img src="src/departments/system-analysis.png" alt="system analysis image">
-        </div>
+            </p>
+        </article>
+        <img class="department-image" src="src/departments/system-analysis.png" alt="system analysis image">
     </div>
 </section>
 
 <section class="courses">
-    <h2 class="info-title departments_info-title">Our preparatory courses</h2>
+    <h2 class="info-title courses_info-title">Courses</h2>
 
-    <div class="container courses_container">
+    <div class="info-container courses_info-container">
         <div class="course-info courses_course-info">
-            <img src="src/courses/math.png" alt="math course image">
+            <img class="characteristic-image courses_characteristic-image" src="src/courses/math.png"
+                 alt="math course image">
             <h3 class="course-title courses_course-title">Math Contains</h3>
             <ul class="contains-list courses_contains-list">
                 <li class="contains-item courses_contains-item">Algebra and number theory</li>
@@ -99,7 +119,8 @@
             <button class="buy-button courses_buy-button">Buy now</button>
         </div>
         <div class="course-info courses_course-info">
-            <img src="src/courses/physics.png" alt="physics course image">
+            <img class="characteristic-image courses_characteristic-image" src="src/courses/physics.png"
+                 alt="physics course image">
             <h3 class="course-title courses_course-title">Physics Contains</h3>
             <ul class="contains-list courses_contains-list">
                 <li class="contains-item courses_contains-item">Atomic and nuclear physics</li>
@@ -113,7 +134,8 @@
             <button class="buy-button courses_buy-button">Buy now</button>
         </div>
         <div class="course-info courses_course-info">
-            <img src="src/courses/english.png" alt="english course image">
+            <img class="characteristic-image courses_characteristic-image" src="src/courses/english.png"
+                 alt="english course image">
             <h3 class="course-title courses_course-title">English Contains</h3>
             <ul class="contains-list courses_contains-list">
                 <li class="contains-item courses_contains-item">Effective Writing Techniques</li>
@@ -129,77 +151,75 @@
     </div>
 </section>
 
-<section class="buy">
-    <h2 class="info-title buy_info-title">Buy now</h2>
+<section class="form">
+    <h2 class="info-title form_info-title">Apply form</h2>
+    <div class="form-wrapper">
+        <div class="inputs-container form_inputs-container">
+            <div class="input-wrapper form_input-wrapper">
+                <label class="text-input-label" for="name">Name:</label>
+                <input class="text-input form_text-input" type="text" id="name" placeholder="Enter your name">
+            </div>
+            <div class="input-wrapper form_input-wrapper">
+                <label class="text-input-label" for="phone">Phone number:</label>
+                <input class="text-input form_text-input" type="text" id="phone" placeholder="Enter your phone number">
+            </div>
+            <div class="input-wrapper form_input-wrapper">
+                <label class="text-input-label" for="telegram">Telegram:</label>
+                <input class="text-input form_text-input" type="text" id="telegram" placeholder="Enter your telegram">
+            </div>
+            <div class="input-wrapper form_input-wrapper">
+                <label class="text-input-label" for="grade">Grade:</label>
+                <input class="text-input form_text-input" type="text" id="grade" placeholder="Enter your grade">
+            </div>
+            <div class="input-wrapper form_input-wrapper">
+                <label class="text-input-label" for="email">Email:</label>
+                <input class="text-input form_text-input" type="text" id="email" placeholder="Enter your email">
+            </div>
+        </div>
+        <h3 class="input-subtitle form_input-subtitle">Select your courses</h3>
+        <div class="select-container form_select-container">
+            <div class="select-input-wrapper form_select-input-wrapper">
+                <input class="checkbox-input form_checkbox-input" type="checkbox" id="math">
+                <label class="checkbox-label form_checkbox-label" for="math">Math</label>
+            </div>
+            <div class="select-input-wrapper form_select-input-wrapper">
+                <input class="checkbox-input form_checkbox-input" type="checkbox" id="physics">
+                <label class="checkbox-label form_checkbox-label" for="physics">Physics</label>
+            </div>
+            <div class="select-input-wrapper form_select-input-wrapper">
+                <input class="checkbox-input form_checkbox-input" type="checkbox" id="english">
+                <label class="checkbox-label form_checkbox-label" for="english">English</label>
+            </div>
+        </div>
 
-    <div class="inputs-container buy_inputs-container">
-        <div class="input-wrapper buy_input-wrapper">
-            <label for="name">Name:</label>
-            <input type="text" id="name" placeholder="Enter your name">
+        <div class="price-container form_price-container">
+            <h3 class="price-title form_price-title">Price for all courses: 99$</h3>
+            <button class="buy-button form_buy-button">Place an order</button>
         </div>
-        <div class="input-wrapper buy_input-wrapper">
-            <label for="phone">Name:</label>
-            <input type="text" id="phone" placeholder="Enter your phone number">
-        </div>
-        <div class="input-wrapper buy_input-wrapper">
-            <label for="telegram">Name:</label>
-            <input type="text" id="telegram" placeholder="Enter your telegram">
-        </div>
-        <div class="input-wrapper buy_input-wrapper">
-            <label for="grade">Name:</label>
-            <input type="text" id="grade" placeholder="Enter your grade">
-        </div>
-        <div class="input-wrapper buy_input-wrapper">
-            <label for="email">Name:</label>
-            <input type="text" id="email" placeholder="Enter your email">
-        </div>
-    </div>
-
-    <div class="select-container buy_select-container">
-        <div class="select-input-wrapper buy_select-input-wrapper">
-            <input type="checkbox" id="math">
-            <label for="math">Math</label>
-        </div>
-        <div class="select-input-wrapper buy_select-input-wrapper">
-            <input type="checkbox" id="physics">
-            <label for="physics">Physics</label>
-        </div>
-        <div class="select-input-wrapper buy_select-input-wrapper">
-            <input type="checkbox" id="english">
-            <label for="english">English</label>
-        </div>
-    </div>
-
-    <div class="price-container buy_price-container">
-        <h3 class="price-title buy_price-title">Price for all courses: 99$</h3>
-        <button class="order-button buy_order-button">Place an order</button>
     </div>
 </section>
 
 <footer class="footer">
     <div class="wrapper footer_wrapper">
-        <div class="links-container footer_links-container">
-            <div class="link footer-link">
-                <img src="src/footer/inst.png" alt="instagram logo">
-                <span class="link-title footer-link-title">IASA Instagram</span>
-            </div>
-            <div class="link footer-link">
-                <img src="src/footer/facebook.png" alt="facebook logo">
-                <span class="link-title footer-link-title">IASA Facebook</span>
-            </div>
+        <div class="footer-link footer-link">
+            <img class="footer-image" src="src/footer/inst.png" alt="instagram logo">
+            <span class="footer-link-title">IASA Instagram</span>
         </div>
-        <img src="src/footer/footer-logo.png" alt="footer logo">
+        <div class="footer-link footer-link">
+            <img class="footer-image" src="src/footer/facebook.png" alt="facebook logo">
+            <span class="footer-link-title">IASA Facebook</span>
+
+        </div>
+        <img class="footer-logo" src="src/footer/footer-logo.png" alt="footer logo">
     </div>
     <div class="wrapper footer_wrapper">
-        <div class="links-container footer_links-container">
-            <div class="link footer-link">
-                <span class="link-title footer-link-title">Privacy policy</span>
-            </div>
-            <div class="link footer-link">
-                <span class="link-title footer-link-title">Terms of Use</span>
-            </div>
+        <div class="footer-link">
+            <span class="footer-link-title">Privacy policy</span>
         </div>
-        <p class="link-title footer-link-title">© 2023 IASA STUDENT COUNSIL</p>
+        <div class="footer-link">
+            <span class="footer-link-title">Terms of Use</span>
+        </div>
+        <p class="footer-link-title">© 2023 IASA STUDENT COUNSIL</p>
     </div>
     <div class="wrapper footer_wrapper">
         <div class="contacts footer_contacts">
@@ -209,10 +229,13 @@
             </div>
             <div class="contacts-wrapper footer_contacts-wrapper">
                 <p class="contacts-title footer_contacts-title">Address:</p>
-                <p class="contacts-info footer_contacts-info">building № 35, Beresteiskyi Avenue, 37-A, 03056, Kyiv, Ukraine</p>
+                <p class="contacts-info footer_contacts-info">building № 35, Beresteiskyi Avenue, 37-A, 03056, Kyiv,
+                    Ukraine</p>
             </div>
         </div>
     </div>
 </footer>
+
+<script src="js/burger-menu.js"></script>
 </body>
 </html>
