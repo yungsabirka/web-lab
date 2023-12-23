@@ -19,16 +19,16 @@
     <img src="src/main-page/logo.png" class="logo header_logo" alt="logo image">
     <nav class="nav header_nav">
         <div class="link-wrapper header_link-wrapper">
-            <a href="" class="link header_link">Main</a>
+            <a href="#main" class="link header_link">Main</a>
         </div>
         <div class="link-wrapper header_link-wrapper">
-            <a href="" class="link header_link">About</a>
+            <a href="#about" class="link header_link">About</a>
         </div>
         <div class="link-wrapper header_link-wrapper">
-            <a href="" class="link header_link">Departments</a>
+            <a href="#departments" class="link header_link">Departments</a>
         </div>
         <div class="link-wrapper header_link-wrapper">
-            <a href="" class="link header_link">Order</a>
+            <a href="#order" class="link header_link">Order</a>
         </div>
     </nav>
     <div class="burger-menu">
@@ -36,7 +36,7 @@
     </div>
 </header>
 
-<main class="main">
+<main id="main" class="main">
     <section class=" title-wrapper main_title-wrapper">
         <div class="titles">
             <h1 class="title main_title">Institute for Applied System Analysis courses</h1>
@@ -49,7 +49,7 @@
     <img src="src/main-page/title-image.png" alt="title image" class="iasa-page_image main_image">
 </main>
 
-<section class="about">
+<section id="about" class="about">
     <h2 class="info-title about_info-title">About us</h2>
     <div class="about-info-wrapper">
         <img class="image-house about_image-house" src="src/about/about-image.png" alt="about image">
@@ -76,14 +76,15 @@
     </div>
 </section>
 
-<section class="departments">
+<section id="departments" class="departments">
     <h2 class="info-title departments_info-title">Departments</h2>
     <nav class="faculties-wrapper departments_faculties-wrapper">
-        <a class="faculty departments_faculty">System Analysis</a>
-        <a class="faculty departments_faculty">System Design</a>
-        <a class="faculty departments_faculty">Artificial Intelligence</a>
+        <a class="faculty departments_faculty active-button" data-tab="tab1">System Analysis</a>
+        <a class="faculty departments_faculty" data-tab="tab2">System Design</a>
+        <a class="faculty departments_faculty" data-tab="tab3">Artificial Intelligence</a>
     </nav>
-    <div class="tabs-info-container departments_tabs-info-container">
+
+    <div id="tab1" class="tabs-info-container active-tab">
         <article class="info-article departments_info-article">
             <p class="info departments_info">
                 The department trains specialists in system analysis and intelligent
@@ -96,6 +97,36 @@
             </p>
         </article>
         <img class="department-image" src="src/departments/system-analysis.png" alt="system analysis image">
+    </div>
+
+    <div id="tab2" class="tabs-info-container no-active-tab">
+        <article class="info-article departments_info-article">
+            <p class="info departments_info">
+                It is one of the most prestigious departments of the Igor Sikorsky
+                Kyiv Polytechnic Institute of Applied Systems Analysis, which was
+                the first in Ukraine to start training specialists in computer-aided
+                design systems in 1972. The Department of SP trains specialists for
+                research, design and organizational and managerial activities in the
+                field of application of modern information technologies in the design
+                of various objects of the artificial human environment and informatization
+                of the functioning of organizations and institutions.
+            </p>
+        </article>
+        <img class="department-image" src="/src/departments/system-design.png" alt="system design image">
+    </div>
+
+    <div id="tab3" class="tabs-info-container no-active-tab">
+        <article class="info-article departments_info-article">
+            <p class="info departments_info">
+                The Department of Artificial Intelligence was established in 2022.
+                The tasks of the new department are to train qualified specialists
+                in the field of artificial intelligence who will be powerful developers
+                in the areas of intelligent data processing, creation of new image processing
+                systems, text documents, diagnostic systems, especially medical ones, intelligent
+                systems in military affairs, etc.
+            </p>
+        </article>
+        <img class="department-image" src="/src/departments/artificial-intelligence.png" alt="artificial intelligence image">
     </div>
 </section>
 
@@ -151,7 +182,7 @@
     </div>
 </section>
 
-<section class="form">
+<section id="order" class="form">
     <h2 class="info-title form_info-title">Apply form</h2>
     <div class="form-wrapper">
         <div class="inputs-container form_inputs-container">
@@ -237,5 +268,7 @@
 </footer>
 
 <script src="js/burger-menu.js"></script>
+<script src="js/departments_tabs.js"></script>
+<script src="js/header-menu.js"></script>
 </body>
 </html>
